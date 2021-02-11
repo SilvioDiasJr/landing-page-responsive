@@ -16,7 +16,7 @@ body {
 }
 
 .center {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -36,11 +36,28 @@ body {
   background-image: url("../img/header_bg.png");
   background-size: cover;
   background-position: center;
-
 }
 
 .container-banner .center {
   height: 100%;
+}
+
+.container-box-list{
+  padding: 30px;
+  margin-top: 40px;
+  float: left;
+  width: 619px;
+  height: 270px;
+  background-color: rgba(33, 35, 67, .7);
+}
+
+.container-box-list ul{
+  list-style-position: inside;
+}
+
+.container-box-list ul li{
+  margin-top: 25px;
+  color: #fff;
 }
 
 .form {
@@ -50,7 +67,8 @@ body {
   float: right;
   position: relative;
   margin-top: -15px;
-  border: 8px solid #ccc;
+  border: 12px solid rgba(120, 120, 120, 0.5);
+  background-clip: padding-box;
   background-color: #fff;
 }
 
@@ -106,4 +124,34 @@ form p{
 
 .input-submit-container input[type=submit]:hover{
   background-color: #4a5097;
+}
+
+.container-second{
+  padding: 40px 0;
+  background-color: #ddd;
+  text-align: center;
+  color: rgb(95, 95, 95);
+}
+
+.container-second h2{
+  font-weight: normal;
+}
+
+.container-second p{
+  margin: 15px 0;
+  display: inline-block;
+  width: 698px;
+  text-align: justify;
+}
+
+.arrow{
+  position: relative;
+  left: 50%;
+  margin-left: -20px;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/arrow.png");
+  background-size: 100%;
+
 }
