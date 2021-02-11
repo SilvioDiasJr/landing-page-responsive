@@ -1,29 +1,36 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-html, body{
+html,
+body {
   height: 100%;
 }
 
-.center{
-  width: 1280px;
+@font-face {
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  font-family: "Open Sans";
+}
+
+.center {
+  max-width: 1280px;
   margin: 0 auto;
 }
 
-.header{
+.header {
   width: 100%;
   height: 60px;
   background-color: #212343;
 }
 
-.header img{
+.header img {
   margin: 15px;
 }
 
-.container-banner{
+.container-banner {
   width: 100%;
   height: 557px;
   background-image: url("../img/header_bg.png");
@@ -32,13 +39,71 @@ html, body{
 
 }
 
-.container-banner .center{
+.container-banner .center {
   height: 100%;
 }
 
-.form{
+.form {
+  padding: 10px;
   width: 400px;
-  height: 100%;
+  height: calc(100% + 30px);
   float: right;
+  position: relative;
+  margin-top: -15px;
+  border: 8px solid #ccc;
   background-color: #fff;
+}
+
+.form h2 {
+  font-weight: normal;
+  color: #999;
+  font-size: 21px;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+.input-container span{
+  display: inline-block;
+  width: 100%;
+  color: #888;
+  font-size: 17px;
+}
+
+.input-container input[type=text],
+input[type=email] {
+  margin-top: 8px;
+  width: 344px;
+  height: 55px;
+  border: 1px solid #8888;
+}
+
+form p{
+  display: inline-block;
+  width: 100%;
+  color: #888;
+  font-size: 17px;
+  margin: 20px 0;
+}
+
+.input-submit-container{
+  width: 100%;
+  text-align: center;
+}
+
+.input-submit-container input[type=submit]{
+  color: #fff;
+  font-size: 25px;
+  width: 280px;
+  height: 56px;
+  background-color: #363a6d;
+  border: none;
+  border-bottom: 5px solid #4a5097;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+
+.input-submit-container input[type=submit]:hover{
+  background-color: #4a5097;
 }
