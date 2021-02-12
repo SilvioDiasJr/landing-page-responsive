@@ -15,6 +15,10 @@ body {
   font-family: "Open Sans";
 }
 
+.clear {
+  clear: both;
+}
+
 .center {
   max-width: 1220px;
   margin: 0 auto;
@@ -45,7 +49,7 @@ body {
   height: 100%;
 }
 
-.container-box-list{
+.container-box-list {
   padding: 30px;
   margin-top: 100px;
   float: left;
@@ -54,11 +58,11 @@ body {
   background-color: rgba(33, 35, 67, .7);
 }
 
-.container-box-list ul{
+.container-box-list ul {
   list-style-position: inside;
 }
 
-.container-box-list ul li{
+.container-box-list ul li {
   margin-top: 25px;
   color: #fff;
 }
@@ -85,7 +89,7 @@ body {
   margin-top: 20px;
 }
 
-.input-container span{
+.input-container span {
   display: inline-block;
   width: 100%;
   color: #888;
@@ -100,7 +104,7 @@ input[type=email] {
   border: 1px solid #8888;
 }
 
-form p{
+form p {
   display: inline-block;
   width: 100%;
   color: #888;
@@ -108,12 +112,12 @@ form p{
   margin: 20px 0;
 }
 
-.input-submit-container{
+.input-submit-container {
   width: 100%;
   text-align: center;
 }
 
-.input-submit-container input[type=submit]{
+.input-submit-container input[type=submit] {
   color: #fff;
   font-size: 25px;
   width: 280px;
@@ -125,11 +129,11 @@ form p{
   transition: .3s ease-in;
 }
 
-.input-submit-container input[type=submit]:hover{
+.input-submit-container input[type=submit]:hover {
   background-color: #4a5097;
 }
 
-.container-second{
+.container-second {
   min-width: 1220px;
   padding: 40px 0;
   background-color: #ddd;
@@ -137,18 +141,18 @@ form p{
   color: rgb(95, 95, 95);
 }
 
-.container-second h2{
+.container-second h2 {
   font-weight: normal;
 }
 
-.container-second p{
+.container-second p {
   margin: 15px 0;
   display: inline-block;
   width: 698px;
   text-align: justify;
 }
 
-.arrow{
+.arrow {
   position: relative;
   left: 50%;
   margin-left: -20px;
@@ -159,33 +163,46 @@ form p{
   background-size: 100%;
 }
 
-.section{
+.section {
   min-width: 1220px;
   padding: 90px 0;
 }
 
-.section h2{
+.section h2 {
   text-align: center;
   color: #462663;
   font-weight: normal;
 }
 
-.container-section{
+.container-section {
   margin-top: 40px;
   text-align: center;
 }
 
-.container-single{
+.container-single {
   float: left;
-  width: 33.333%;
+  width: 33.3%;
   padding: 30px;
 }
 
-.container-single p{
+
+
+.container-single p {
   text-align: justify;
   padding: 30px 25px;
 }
 
-.container-single img{
+.container-single img {
   width: 70px;
+}
+
+.footer {
+  padding: 20px 0;
+  border-top: 4px solid #8888;
+  text-align: center;
+  color: #888;
+}
+
+.footer p{
+  margin-top: 8px;
 }
