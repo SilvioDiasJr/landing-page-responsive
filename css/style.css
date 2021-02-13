@@ -20,14 +20,14 @@ body {
 }
 
 .center {
-  max-width: 1220px;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 2%;
 }
 
 .header {
-  min-width: 1220px;
   width: 100%;
+  padding: 0 2%;
   height: 60px;
   background-color: #212343;
 }
@@ -38,7 +38,7 @@ body {
 
 .container-banner {
   width: 100%;
-  min-width: 1220px;
+  padding: 0 2%;
   height: 557px;
   background-image: url("../img/header_bg.png");
   background-size: cover;
@@ -134,8 +134,7 @@ form p {
 }
 
 .container-second {
-  min-width: 1220px;
-  padding: 40px 0;
+  padding: 40px 2%;
   background-color: #ddd;
   text-align: center;
   color: rgb(95, 95, 95);
@@ -146,9 +145,10 @@ form p {
 }
 
 .container-second p {
+  width: 100%;
+  max-width: 768px;
   margin: 15px 0;
   display: inline-block;
-  width: 698px;
   text-align: justify;
 }
 
@@ -164,8 +164,7 @@ form p {
 }
 
 .section {
-  min-width: 1220px;
-  padding: 90px 0;
+  padding: 90px 2%;
 }
 
 .section h2 {
@@ -185,8 +184,6 @@ form p {
   padding: 30px;
 }
 
-
-
 .container-single p {
   text-align: justify;
   padding: 30px 25px;
@@ -205,4 +202,80 @@ form p {
 
 .footer p{
   margin-top: 8px;
+}
+
+@media screen and (max-width: 1024px){
+  .header{
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .header img{
+    margin: 0;
+  }
+
+  .container-banner{
+    height: auto;
+    padding: 40px 2%;
+    text-align: center;
+  }
+
+  .container-box-list{
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+    padding: 30px 0;
+  }
+
+  .form{
+    width: 60%;
+    max-width: 400px;
+    height: 100%;
+    margin-top: 30px;
+    float: right;
+    padding: 10px;
+    top: 0;
+  }
+
+  .input-container input[type=text],
+  input[type=email] {
+    width: 100%;
+    height: 55px;
+  }
+  
+  .input-submit-container input[type=submit] {
+    width: 100%;
+    max-width: 280px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container-box-list{
+    margin-top: 0;
+    float: none;
+    display: inline-block;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .form{
+    float: none;
+    display: inline-block;
+    width: 90%;
+  }
+
+  .container-second p{
+    width: 90%;
+  }
+
+  .container-single {
+    width: 100%;
+    float: none;
+    padding: 30px;
+  }
 }
